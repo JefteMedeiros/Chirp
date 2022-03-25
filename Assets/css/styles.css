@@ -34,7 +34,7 @@ h1, h2, h3, h4 {
 }
 
 p, a {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .blue__link {
@@ -64,7 +64,7 @@ img {
   align-items: center;
   height: 100%;
   gap: 10px;
-  padding: 20px 40px;
+  padding: 40px 80px;
 }
 
 .grid {
@@ -74,10 +74,26 @@ img {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 20px 40px;
+  padding: 40px 80px;
 }
 
 /* MARGIN AND PADDING */
+.mt__1 {
+  margin-top: 0.5rem;
+}
+
+.mt__2 {
+  margin-top: 1rem;
+}
+
+.mt__3 {
+  margin-top: 1.5rem;
+}
+
+.mt__4 {
+  margin-top: 2rem;
+}
+
 .mb__1 {
   margin-bottom: 0.5;
 }
@@ -94,6 +110,21 @@ img {
   margin-bottom: 2.5rem;
 }
 
+.pb__1 {
+  padding-bottom: 0.75rem;
+}
+
+.pb__2 {
+  padding-bottom: 1.75rem;
+}
+
+.pb__3 {
+  padding-bottom: 2.75rem;
+}
+
+.pb__4 {
+  padding-bottom: 3.75rem;
+}
 .ml__1 {
   margin-left: 0.5rem;
 }
@@ -137,8 +168,8 @@ img {
 }
 
 .btn__blue {
-  padding: 15px 15px 15px 60px;
-  background: var(--btn-blue) url("/assets/Twitter.svg") 20px 20px no-repeat;
+  padding: 15px 25px 15px 65px;
+  background: var(--btn-blue) url("/assets/Twitter.svg") 25px 19px no-repeat;
   color: var(--white);
 }
 
@@ -149,7 +180,6 @@ img {
 
 .header__section .flex {
   justify-content: space-between;
-  padding: 40px 80px;
 }
 
 .logo {
@@ -189,4 +219,33 @@ img {
   color: var(--paragraph-light);
 }
 
+.avatar__img {
+  display: flex;
+}
+
+.twitter__img {
+  margin-right: -22px;
+}
+
+/* ========== FEATURES ========== */
+.features .grid{
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.features__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.feature__box {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--paragrahp-lighter);
+}
+
+.feature__box p {
+  color: var(--paragrahp-lighter);
+}
   
