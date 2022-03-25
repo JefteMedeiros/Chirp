@@ -1,0 +1,154 @@
+:root {
+  /* ========== BACKGROUND COLORS ========== */
+  --white: #FFFFFF;
+  --beige: #FBF8F3;
+  --light-blue: #D7F5F5;
+  --dark-blue: #237A9A;
+  --btn-blue: #1DA1F2;
+  --logo-blue: #3180f5;
+
+  /* ========== FONT COLORS ========== */
+  --paragraph-dark: #595959;
+  --title-color: #000000;
+  --paragraph-light: #757575;
+  --paragrahp-lighter: #888888;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+/* ========== DEFAULT ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ========== LAYOUT ========== */
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+  padding: 20px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px 20px;
+}
+
+/* MARGIN AND PADDING */
+.mb-1 {
+  margin-bottom: 1;
+}
+
+.mb-2 {
+  margin-bottom: 2;
+}
+
+.mb-3 {
+  margin-bottom: 3;
+}
+
+/* ========== FONT SIZES ========== */
+.font__larger {
+  font-size: 7rem;
+}
+
+.font__large {
+   font-size: 2rem;
+}
+
+.font__paragraph {
+  font-size: 1.3rem;
+}
+
+.font__link {
+  font-size: 1.4rem;
+}
+
+/* ========== BUTTONS ========== */
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+}
+
+.btn__blue {
+  padding: 15px 15px 15px 60px;
+  background: var(--btn-blue) url("/assets/Twitter.svg") 20px 20px no-repeat;
+  color: var(--white);
+}
+
+/* ========== HEADER ========== */
+.header__section {
+  background-color: var(--beige);
+}
+
+.header__section   .flex {
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: var(--font-paragraph);
+  color: var(--logo-blue);
+  font-style: italic;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  font-size: var(--font-paragraph);
+}
+
+.header__link, .btn__blue {
+  text-decoration: none;
+}
+
+.header__link {
+  padding-right: 70px;
+  color: var(--paragraph-dark);
+}
+
+/* ========== ABOUT ========== */
+.about {
+  font-size: var(--font-larger);
+  background-color: var(--beige);
+}
+
+.about .flex {
+  height: 100%;
+  justify-content: space-between;
+}
+
+  
